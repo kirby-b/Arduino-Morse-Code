@@ -8,4 +8,5 @@ Build the arduino with the parts described in the model sketch. To be very speci
 4. 230 ohm resistor
 5. 2 Black M-M wires
 6. 1 Red M-M wire
+<br/><br/>
 Next you need to run the sketch of your choice in the Arduino IDE and upload it to your connected board
