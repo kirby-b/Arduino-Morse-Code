@@ -1,4 +1,4 @@
-# Arduino-Morse-Code
+# Arduino Morse Code
 A small collection of Morse code messages on an Arduino
 # Instructions
 Build the arduino with the parts described in the model sketch. To be very specific I used
