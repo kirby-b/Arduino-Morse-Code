@@ -1,4 +1,4 @@
-int ledPin = 2;
+int ledPin = 5;
 
 byte leds = 0;
 
@@ -12,60 +12,45 @@ void setup()
 void loop() {
   // put your main code here, to run repeatedly:
   for(int i = 0; i <= 1; i++){//G
-  digitalWrite(ledPin, HIGH);
-  delay(750);
-  digitalWrite(ledPin, LOW);
-  delay(750);
+  dash();
   }
-  digitalWrite(ledPin, HIGH);
-  delay(350);
-  digitalWrite(ledPin, LOW);
-  delay(350);
+  dot();
+  delay(100);
   for(int i = 0; i <= 5; i++){//OO
-  digitalWrite(ledPin, HIGH);
-  delay(750);
-  digitalWrite(ledPin, LOW);
-  delay(750);
+  dash();
   }
-  digitalWrite(ledPin, HIGH);//D
-  delay(750);
-  digitalWrite(ledPin, LOW);
-  delay(750);
+  delay(100);
+  dash();//D
   for(int i = 0; i <= 1; i++){
-  digitalWrite(ledPin, HIGH);
-  delay(350);
-  digitalWrite(ledPin, LOW);
-  delay(350);
+  dot();
   }
-
-  digitalWrite(ledPin, HIGH);//B
-  delay(750);
-  digitalWrite(ledPin, LOW);
-  delay(750);
+  delay(100);
+  dash();;//B
   for(int i = 0; i <= 2; i++){
-  digitalWrite(ledPin, HIGH);
-  delay(350);
-  digitalWrite(ledPin, LOW);
-  delay(350);
+  dot();
   }
-  digitalWrite(ledPin, HIGH);//Y
-  delay(750);
-  digitalWrite(ledPin, LOW);
-  delay(750);
-  digitalWrite(ledPin, HIGH);
-  delay(350);
-  digitalWrite(ledPin, LOW);
-  delay(350);
+  delay(100);
+  dash();//Y
+  dot();
   for(int i = 0; i <= 1; i++){
-  digitalWrite(ledPin, HIGH);
-  delay(750);
-  digitalWrite(ledPin, LOW);
-  delay(750);
+  dash();
   }
-  digitalWrite(ledPin, HIGH);//E
-  delay(350);
-  digitalWrite(ledPin, LOW);
-  delay(350);
+  delay(100);
+  dot();//E
 
   delay(5000);
+}
+
+void dot(){
+  digitalWrite(ledPin, HIGH);
+  delay(350);
+  digitalWrite(ledPin, LOW);
+  delay(350);
+}
+
+void dash(){
+  digitalWrite(ledPin, HIGH);
+  delay(750);
+  digitalWrite(ledPin, LOW);
+  delay(750);
 }
